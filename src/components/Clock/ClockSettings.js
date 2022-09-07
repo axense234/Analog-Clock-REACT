@@ -2,11 +2,7 @@ import React from "react";
 // CSS
 import "../../styles/ClockSettings.css";
 // Redux
-import {
-  clockSettings,
-  changeClockSize,
-  changeArrowColorTheme,
-} from "./clockSlice";
+import { changeClockSize, changeArrowColorTheme } from "./clockSlice";
 import { useDispatch } from "react-redux";
 
 const ClockSettings = () => {
