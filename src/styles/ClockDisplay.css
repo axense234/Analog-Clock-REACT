@@ -1,0 +1,19 @@
+.clock-display-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.small {
+  transform: scale(0.4);
+}
+
+.medium {
+  transform: scale(0.7);
+}
+
+.big {
+  transform: scale(1.15);
+}
