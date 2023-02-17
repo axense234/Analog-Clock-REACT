@@ -1,23 +1,17 @@
-import React from "react";
 // Clock Components
-import ClockTitle from "./components/Clock/ClockTitle";
-import ClockDisplay from "./components/Clock/ClockDisplay";
-import ClockSettings from "./components/Clock/ClockSettings";
-// Redux
-import { Provider } from "react-redux";
-import { store } from "./app/store";
+import ClockTitle from "./components/ClockTitle";
+import ClockDisplay from "./components/ClockDisplay";
+import ClockSettings from "./components/ClockSettings";
 // AppProvider
 import { AppProvider } from "./context";
 
 const Clock = () => {
   return (
-    <Provider store={store}>
-      <AppProvider>
-        <ClockTitle />
-        <ClockDisplay />
-        <ClockSettings />
-      </AppProvider>
-    </Provider>
+    <AppProvider>
+      <ClockTitle />
+      <ClockDisplay />
+      <ClockSettings />
+    </AppProvider>
   );
 };
 

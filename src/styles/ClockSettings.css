@@ -20,33 +20,48 @@
   width: 80%;
   padding: 1rem;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.clock-settings-section-form > div > button {
-  padding: 0.6rem;
-  letter-spacing: 0.3rem;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-.clock-settings-section-form > div {
+.clock-setting-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+  border: 1px solid black;
   padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 5;
+  width: 70%;
 }
 
-label {
-  font-size: 1.4rem;
-  letter-spacing: 0.3rem;
+.clock-setting-container > label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-input {
-  transform: scale(1.5);
+.clock-setting-container > label > button {
+  background-color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  border: none;
 }
 
-label,
-input {
-  margin-right: auto;
+.clock-setting-container > input {
+  background-color: inherit;
+  width: 30%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+
+  transition: transform 0.1s ease-in;
+}
+
+.clock-setting-container > input:hover {
+  transform: scale(1.1);
 }

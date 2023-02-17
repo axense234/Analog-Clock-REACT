@@ -2,7 +2,6 @@
   top: 20rem;
   height: 14rem;
   border-radius: 1rem;
-  background-color: black;
   border: 1px solid black;
   margin-bottom: calc(50% - 7.5rem);
 }
@@ -41,14 +40,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.arrow-black {
-  background-color: black;
-}
-.arrow-yellow {
-  background-color: yellow;
-}
-.arrow-pink {
-  background-color: pink;
 }
