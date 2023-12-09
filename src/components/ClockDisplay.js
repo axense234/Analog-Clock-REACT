@@ -15,9 +15,12 @@ const ClockDisplay = () => {
   return (
     <section
       style={{ transform: `scale(${clockSize})` }}
-      className='clock-display-section'
+      className="clock-display-section"
     >
-      <img src='https://i.ibb.co/sw8tpRq/692100.png' alt='Clock' />
+      <img
+        src="https://res.cloudinary.com/birthdayreminder/image/upload/v1702116109/ycwfhsjn1xs3zk4maut1.png"
+        alt="Clock"
+      />
       <TinyArrow />
       <MediumArrow />
       <BigArrow />

@@ -31,6 +31,8 @@ npm start
 
 ## **Version History**
 
+- 0.3
+  - Analyzed the code to gather to-do tasks and made some slight improvements.
 - 0.2
   - Improved React logic,ditched Redux for context,made the clock settings a bit more scalable.
   - See [commit change](https://github.com/axense234/Analog-Clock-REACT/commits/master) or See [release history](https://github.com/axense234/Analog-Clock-REACT/releases)
