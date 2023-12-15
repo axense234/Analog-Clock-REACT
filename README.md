@@ -20,9 +20,20 @@ git clone https://github.com/axense234/Analog-Clock-REACT.git
 
 ### Executing program
 
+- **Using NPM**
+
 ```
 npm install
 npm start
+```
+
+- **Using Docker**
+
+```
+docker build -t analog-clock-react:0.3.0 .
+docker stop analog-clock-react-app
+docker rm analog-clock-react-app
+docker run -d -p 3000:3000 --name analog-clock-react-app analog-clock-react:0.3.0
 ```
 
 ## **Authors**
@@ -32,7 +43,7 @@ npm start
 ## **Version History**
 
 - 0.3
-  - Analyzed the code to gather to-do tasks and made some slight improvements.
+  - Analyzed the code to gather to-do tasks and made some slight improvements. Also added Docker.
 - 0.2
   - Improved React logic,ditched Redux for context,made the clock settings a bit more scalable.
   - See [commit change](https://github.com/axense234/Analog-Clock-REACT/commits/master) or See [release history](https://github.com/axense234/Analog-Clock-REACT/releases)

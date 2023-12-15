@@ -6,9 +6,9 @@ import { useGlobalContext } from "../context";
 
 const ClockSettings = () => {
   return (
-    <section className='clock-settings-section'>
+    <section className="clock-settings-section">
       <h2>SETTINGS</h2>
-      <form className='clock-settings-section-form'>
+      <form className="clock-settings-section-form" action="#">
         {clockSettings.map((clockSetting) => {
           return <ClockSetting key={clockSetting.id} {...clockSetting} />;
         })}
@@ -38,16 +38,19 @@ const ClockSetting = ({ title, inputType }) => {
   }
 
   return (
-    <div className='clock-setting-container'>
+    <div className="clock-setting-container">
       <label htmlFor={title}>
-        <button type='submit'>CHANGE {title}</button>
+        <button type="submit">CHANGE {title}</button>
       </label>
       <input
         type={inputType}
         name={title}
         id={title}
         value={inputValue}
-        onChange={(e) => onChangeSetter(e.target.value)}
+        max={0}
+        onChange={(e) =>
+          onChangeSetter(e.target.value > 0 ? e.target.value : 0)
+        }
       />
     </div>
   );
