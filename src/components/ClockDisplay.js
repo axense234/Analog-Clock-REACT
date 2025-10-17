@@ -6,6 +6,8 @@ import "../styles/ClockDisplay.css";
 import { useGlobalContext } from "../context";
 // Clock Arrows
 import { TinyArrow, MediumArrow, BigArrow } from "./ClockArrows";
+// Data
+import { minClockSize } from "../data";
 
 const ClockDisplay = () => {
   const { clockSize } = useGlobalContext();
@@ -14,7 +16,7 @@ const ClockDisplay = () => {
 
   return (
     <section
-      style={{ transform: `scale(${clockSize})` }}
+      style={{ transform: `scale(${Math.max(clockSize, minClockSize)})` }}
       className="clock-display-section"
     >
       <img

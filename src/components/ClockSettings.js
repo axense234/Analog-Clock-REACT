@@ -48,9 +48,9 @@ const ClockSetting = ({ title, inputType }) => {
         id={title}
         value={inputValue}
         max={0}
-        onChange={(e) =>
-          onChangeSetter(e.target.value > 0 ? e.target.value : 0)
-        }
+        onChange={(e) =>{
+          onChangeSetter(e.target.value)
+        }}
       />
     </div>
   );
